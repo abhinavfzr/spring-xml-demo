@@ -4,9 +4,9 @@
        xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-
-
-
-    <bean name="BeanLifeCycleDemoBean" class="com.stackroute.demo.BeanLifeCycleDemoBean" init-method="customInit" destroy-method="customDestroy">
+    <bean name="BeanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean">
+        <constructor-arg value="abhinav"></constructor-arg>
     </bean>
+    <bean class="com.stackroute.demo.BeanPostProcessorDemoBean" />
+
 </beans>
